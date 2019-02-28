@@ -19,3 +19,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# string to number
+mystring = '10'
+mynumber = int(mystring)  # converts into integer 10
