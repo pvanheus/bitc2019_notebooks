@@ -8,10 +8,12 @@ def main():
         filename = sys.argv[1]
         try:
             data = numpy.loadtxt(filename, delimiter=',')
-            for m in data.mean(axis=1):
-                print(m)
         except IOError as e:
             print("Could not read file: " + str(e))
+            sys.exit(1) # exit with an error code
+        for m in data.mean(axis=1):
+            print(m)
+
     else:
         print('Usage: python ' + script + ' <filename>')
 
