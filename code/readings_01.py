@@ -17,4 +17,5 @@ def main():
     else:
         print('Usage: python ' + script + ' <filename>')
 
-main()
+if __name__ == '__main__':
+    main()
