@@ -15,6 +15,11 @@ def arithmetic():
                 sys.exit(1)
         elif operation == 'subtract':
             try:
-                print(num1, "-", num2, "=", )
+                print(num1, "-", num2, "=", int(num1) - int(num2))
+            except ValueError as e:
+                print("only floats and integers are permitted:", str(e))
+                sys.exit(1)
+        else:
+            print("operation not valid, only add and subtract operations are permitted")
             
             
