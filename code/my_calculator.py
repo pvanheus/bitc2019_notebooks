@@ -24,5 +24,6 @@ def arithmetic():
         script = sys.argv[0]
         print("Usage:", script, "{add|subtract} <num1> <num2>")
 
+arithmetic()
             
             
