@@ -7,5 +7,6 @@ def arithmetic():
         num1 = sys.argv[2]
         num2 = sys.argv[3]
         if operation == 'add':
-            print(num1, "+", num2, "=", int(num1) + int(num2))
+            try:
+                print(num1, "+", num2, "=", int(num1) + int(num2))
             
