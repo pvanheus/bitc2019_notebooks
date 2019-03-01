@@ -22,6 +22,7 @@ def arithmetic():
             print("operation not valid, only add and subtract operations are permitted")
     else:
         script = sys.argv[0]
-        print("Usage: " + )
+        print("Usage:", script, "{add|subtract} <num1> <num2>")
+
             
             
